@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  polkadot-wiki-bot:
+    build: .
+    container_name: polkadot-wiki-bot
+    restart: unless-stopped
+    environment:
+      - WIKI_BOT_TOKEN=${WIKI_BOT_TOKEN}
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
