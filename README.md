@@ -7,7 +7,6 @@
 
 > A professional Telegram bot for browsing and searching the official [Polkadot Wiki](https://wiki.polkadot.network) directly from Telegram.
 
-![Bot Screenshot](assets/screenshot.png)
 
 ## ✨ Features
 
